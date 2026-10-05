@@ -1,49 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reminderz – SMS Opt-In</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 680px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.6; }
-    h1 { font-size: 1.5rem; margin-bottom: 4px; }
-    h2 { font-size: 1.1rem; margin-top: 2rem; }
-    .box { background: #f5f5f5; border: 1px solid #ddd; border-radius: 6px; padding: 16px 20px; margin: 16px 0; font-family: monospace; font-size: 0.9rem; }
-    .label { font-weight: bold; color: #555; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
-    footer { margin-top: 3rem; font-size: 0.8rem; color: #888; border-top: 1px solid #eee; padding-top: 1rem; }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SMS Opt-In — Sam Kovatovich</title>
 </head>
 <body>
+  <main>
+    <h1>SMS Reminder Service — Opt-In Information</h1>
+    <p>This page describes how a user enrolls to receive automated SMS reminders from Sam Kovatovich's personal reminder service.</p>
 
-<h1>Reminderz — SMS Enrollment</h1>
-<p>Reminderz is a personal automated SMS notification system operated by <strong>Sam Kovatovich</strong> (sole proprietor). It sends scheduled maintenance and calendar reminders to a single registered mobile phone number.</p>
+    <h2>How Enrollment Works</h2>
+    <p>The sole user opts in by manually entering their mobile phone number into the application's configuration file (<code>reminders.json</code>). This action constitutes explicit consent to receive automated SMS reminder messages.</p>
 
-<h2>How Enrollment Works</h2>
-<p>The system operator (Sam Kovatovich) enrolls a phone number by manually entering it into the application configuration file (<code>reminders.json</code>). By adding the number to the configuration, the operator explicitly consents to receive automated SMS reminder notifications from this system.</p>
+    <h2>Example Configuration</h2>
+    <pre>{"to_number": "+16232995016", "sms_enabled": true}</pre>
 
-<div class="box">
-<span class="label">Example configuration (opt-in step)</span><br><br>
-{<br>
-&nbsp;&nbsp;"to_number": "+16232995016",<br>
-&nbsp;&nbsp;"sms_enabled": true<br>
-}
-</div>
+    <h2>What You're Consenting To</h2>
+    <p>By adding your number to the configuration, you agree to receive automated SMS reminder messages. Message frequency varies based on scheduled reminders. Message and data rates may apply.</p>
 
-<p>No third parties are enrolled. The sender and sole recipient are the same individual.</p>
+    <h2>Opt-Out</h2>
+    <p>Reply <strong>STOP</strong> to any message to unsubscribe. Reply <strong>START</strong> or <strong>UNSTOP</strong> to re-enroll. Reply <strong>HELP</strong> for assistance.</p>
 
-<h2>Consent Language</h2>
-<p>By entering a mobile number into the Reminderz configuration file, the user consents to receive automated SMS reminder messages from Reminderz (operated by Sam Kovatovich) at the number provided. Message frequency varies based on configured reminder schedules. Message and data rates may apply.</p>
+    <h2>Contact</h2>
+    <p>kovatovich@gmail.com</p>
 
-<h2>Opt-Out</h2>
-<p>Reply <strong>STOP</strong> to any message to unsubscribe. You will receive a confirmation and no further messages will be sent. Reply <strong>START</strong> or <strong>UNSTOP</strong> to re-enroll.</p>
-
-<h2>Help</h2>
-<p>Reply <strong>HELP</strong> to any message for assistance. For additional support, contact: kovatovich@gmail.com</p>
-
-<h2>Privacy</h2>
-<p>See our <a href="https://skovatov.github.io/reminderz2/privacy.html">Privacy Policy</a> and <a href="https://skovatov.github.io/reminderz2/terms.html">Terms of Service</a>.</p>
-
-<footer>Reminderz is operated by Sam Kovatovich &mdash; Cave Creek, AZ &mdash; kovatovich@gmail.com</footer>
-
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms and Conditions</a></p>
+  </main>
 </body>
 </html>
